@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #1c1c1c;
+  color: white;
+  font-family: 'Fredoka One', monospace;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+}
+
+
+h1{
+  font-size: 5rem;
+  line-height: 1;
+
+}
+
+@keyframes spin{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.girar{
+  display: inline-block;
+  animation: spin 5s linear infinite;
+}
+.verde-neon{ color: #39FF14;}
+.terra{ font-size: 0.80em; }
+
+
+
+@media (min-width: 1200px){
+  h1 {
+    font-size: 6rem;
+  }
+}
+
+
+@media (max-width: 1024px){
+  h1{
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 768px){
+  h1{
+    font-size: 3rem;
+  }
+
+  .earth{
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px){
+  h1{
+    font-size: 2.3rem;
+  }
+
+
+  .earth{
+    font-size: 0.9em;
+  }
+}
